@@ -29,13 +29,10 @@ basic.forever(function () {
             maqueen.writeLED(maqueen.Led.LedAll, maqueen.LedSwitch.LedOn)
             maqueen.setColor(0x00ffff)
         }
-        // Rechts
         if (Richtung == 1) {
             maqueen.setColor(0xff0000)
             maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 70)
             maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 0)
-        } else {
-            maqueen.motorStop(maqueen.Motors.All)
         }
     }
 })
